@@ -1,17 +1,25 @@
-// import React, { Component } from 'react';
-import React from 'react'
-import * from './Matrix.js'
+import React, { Component } from 'react';
 
-export default class Cell extends React.Component {
+export default class Cell extends Component {
 
-    constructor() {
+    constructor(props) {
         super()
         this.state = {
-            color: {this.props.color}
+            color: props.value
         }
     }
 
+    clickHandler = () => {
+        this.setState({color: '#333'})
+    }
+
     render() {
-        return()
+        return(
+            <div 
+            className="cell" 
+            onClick={this.clickHandler}
+            style={{backgroundColor: this.state.color}}
+            ></div>
+        )
     }
 }

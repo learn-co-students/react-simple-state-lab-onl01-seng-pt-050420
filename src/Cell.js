@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Data from './data.js'
+
 export default class Cell extends Component {
 
     constructor(props) {

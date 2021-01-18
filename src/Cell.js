@@ -18,6 +18,5 @@ export default class Cell extends Component {
         style={{backgroundColor: this.state.color}} >
         </div>)
     }
-
 }
 

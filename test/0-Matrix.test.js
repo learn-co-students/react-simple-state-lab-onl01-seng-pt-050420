@@ -36,7 +36,7 @@ describe('<Matrix />', () => {
       row.forEach(val => {
         expect(val.toLowerCase()).to.equal('#f00')
       })
-    })
+    }) 
   })
 
 })
